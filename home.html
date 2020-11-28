@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"/>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist\css\bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="animate.min.css">
+    
+  </head>
+  <body  style="padding: 0;
+  background: url('A3F.png') no-repeat fixed;
+  background-color: black;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  margin: 0;">
+      <!-- navbar-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background: transparent;">
+        <a href="home.html" class="navbar-brand"  >
+            <img src="Logo.png" alt="Logo" style="width:80px;">
+          </a>
+          <span class="navbar-text"  style="color: #F3E7E7; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 26px;   ">
+            Home
+          </span>
+        <ul class="navbar-nav ml-auto">
+            
+          <li class="nav-item">
+            <a class="nav-link" href="home.html" style="margin-right: 2em; color: #F3E7E7;font-family: 'Courier New', Courier, monospace; font-weight: bold; float: right;border-bottom-width:1px;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-color: white; border-style: solid;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeri.html" style="margin-right: 2em;color: #F3E7E7;font-family: 'Courier New', Courier, monospace; font-weight: bold;">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html" style="margin-right: 2em; color: #F3E7E7;font-family: 'Courier New', Courier, monospace; font-weight: bold;">Profil</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <br><br><br><br><br><br><br>
+      <div class="container-fluid" style="margin-top:80px; ">
+        <h2 class="animate__animated animate__zoomIn animate__slow" style="color: #F3E7E7; text-align: center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  font-weight: bold;">Garrage Car</h2>
+
+        <h4 class="animate__animated animate__zoomIn animate__slow" style="color: #F3E7E7; text-align: center;font-family: 'Courier New', Courier, monospace;font-weight: bold;">Tentukan Pilihanmu Di sini</h4>
+      </div>
+
+      <div id="wrapper">
+        <div class="container mb-end fixed-bottom">
+         <div class="owl-carousel-2 owl-carousel owl-theme">
+           <div><img src="images/logo bmw.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo chevrolet.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo honda.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo mazda.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo mitsubishi.png" style="width: 80px; height: 80px;" ></div>
+           <div><img src="images/logo nissan.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo tesla.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo toyota.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo wuling.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo kia.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo marcedes.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo mitsubishi.png" style="width: 80px; height: 80px;"></div>
+           <div><img src="images/logo hyundai.png" style="width: 80px; height: 80px;"></div>
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="css/owl.theme.default.css" type="text/css">
+<script type="text/javascript">
+$(document).ready(function(){
+ $(".owl-carousel-1").owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:true,
+  responsive:{
+   0:{
+    items:1
+   },
+   600:{
+    items:3
+   },
+   1000:{
+    items:5
+   }
+  }
+ })
+});
+
+$(document).ready(function(){
+ $(".owl-carousel-2").owlCarousel({
+  items:4,
+  loop:true,
+  margin:10,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true
+ });
+ $('.play').on('click',function(){
+  owl.trigger('play.owl.autoplay',[1000])
+ })
+ $('.stop').on('click',function(){
+  owl.trigger('stop.owl.autoplay')
+ })
+});
+
+$(document).ready(function(){
+  $(".owl-carousel-3").owlCarousel({
+  items:4,
+  loop:true,
+  margin:10,
+  dots:true,
+ });
+});
+
+</script>
+      
+    
+      
+  </body>
+ 
+  
